@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RESpinner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNo-NE-zVW">
+                                <rect key="frame" x="240" y="440" width="120" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="UW5-Fn-qxo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Show">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJy-B0-KF3"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Od-gt-5xN">
+                                <rect key="frame" x="240" y="540" width="120" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="qab-8o-os5"/>
+                                    <constraint firstAttribute="height" constant="30" id="xoA-xx-3Bc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Hide">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oMr-fK-9iu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZO-DQ-AN8">
+                                <rect key="frame" x="240" y="490" width="120" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="B9r-tv-FL1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Show Activity">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showActivity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H3e-mJ-U5Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.81960784313725488" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KZO-DQ-AN8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5FZ-0G-pA8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Od-gt-5xN" secondAttribute="bottom" constant="30" id="5xx-Ec-YhZ"/>
+                            <constraint firstItem="KZO-DQ-AN8" firstAttribute="height" secondItem="8Od-gt-5xN" secondAttribute="height" id="IbX-F3-ScU"/>
+                            <constraint firstItem="8Od-gt-5xN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KJn-Di-4fw"/>
+                            <constraint firstItem="8Od-gt-5xN" firstAttribute="top" secondItem="KZO-DQ-AN8" secondAttribute="bottom" constant="20" id="Yma-e7-pNa"/>
+                            <constraint firstItem="uNo-NE-zVW" firstAttribute="height" secondItem="KZO-DQ-AN8" secondAttribute="height" id="apH-0Y-HJS"/>
+                            <constraint firstItem="KZO-DQ-AN8" firstAttribute="top" secondItem="uNo-NE-zVW" secondAttribute="bottom" constant="20" id="bJn-lr-UD0"/>
+                            <constraint firstItem="uNo-NE-zVW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zgy-Pd-PhV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hideButton" destination="8Od-gt-5xN" id="G3K-ih-DA4"/>
+                        <outlet property="showActivityButton" destination="KZO-DQ-AN8" id="cDC-bt-M0y"/>
+                        <outlet property="showButton" destination="uNo-NE-zVW" id="Muc-h1-PGw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
