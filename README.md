@@ -11,7 +11,7 @@ A **Swift** based customisable light weight Spinner / Loading view **for iOS 8**
 - Comes with two type of spineners  - **Custom Circular progress** and **default Activity View** 
 - Builds as an **iOS 8 framework**.
 
-![PKHUD.gif](https://cloud.githubusercontent.com/assets/1275218/10124182/09f4c406-654f-11e5-9cab-0f2e6f470887.gif)
+![RESpinners.png](https://github.com/DpzAtMicRO/RESpinner/blob/master/Dumps/RESpinners.png)
 
 ## Usage
 
